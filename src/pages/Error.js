@@ -1,11 +1,21 @@
 import React from "react";
-import Hero from '../components/Hero'
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-      <>
-        <Hero />
-      </>
+    <>
+      <Hero>
+        <Banner title="404" subtitle="This is the end of this web app ">
+          <button className="btn-primary">
+            <Link to="/" className="btn-primary">
+              Return Home
+            </Link>
+          </button>
+        </Banner>
+      </Hero>
+    </>
   );
 };
 
